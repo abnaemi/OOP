@@ -1,7 +1,14 @@
 package org.example;
 
 public class student {
-    public student () {}
+
+
+    public student (int studentID, String firstname, String surname) {
+        this.studentID = studentID;
+        this.firstname = firstname;
+        this.surname = surname;
+        System.out.println("A new student has been addded");
+    }
     private int studentID;
     private String firstname;
     private String surname;
