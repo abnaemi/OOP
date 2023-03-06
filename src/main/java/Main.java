@@ -1,4 +1,4 @@
-package org.example;
+import model.student;
 
 public class Main {
     public static void main(String[] args){
@@ -12,7 +12,7 @@ public class Main {
     System.out.println(firstStudent.getfirstName());
     System.out.println(firstStudent.getSurname());
     System.out.println(firstStudent.getStudentID());
-
+        System.out.println(firstStudent.toString());
 
     }
 

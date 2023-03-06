@@ -1,4 +1,4 @@
-package org.example;
+package model;
 
 public class student {
 
@@ -18,8 +18,8 @@ public class student {
 
     }
 
-    public void setStudentID (int x){
-        studentID = x;
+    public void setStudentID (int studentID){
+        this.studentID = studentID;
 
     }
 
@@ -44,6 +44,9 @@ public class student {
 
     }
 
+      public String toString (){
+        return firstname + " " + surname + " " + studentID;
 
+      }
 
 }
