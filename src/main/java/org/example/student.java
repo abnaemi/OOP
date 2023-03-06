@@ -1,7 +1,7 @@
 package org.example;
 
 public class student {
-
+    public student () {}
     private int studentID;
     private String firstname;
     private String surname;

@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args){
 
     student firstStudent = new student();
-
+    // das ist der standart konstruktur student firstStudent = new student();
     firstStudent.setFirstname("Max");
     firstStudent.setSurname("Mustermann");
     firstStudent.setStudentID(2022297);
