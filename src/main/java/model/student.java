@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class student {
 
 
@@ -49,4 +51,21 @@ public class student {
 
       }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof student student)) return false;
+
+        if (getStudentID() != student.getStudentID()) return false;
+        if (!Objects.equals(firstname, student.firstname)) return false;
+        return getSurname() != null ? getSurname().equals(student.getSurname()) : student.getSurname() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getStudentID();
+        result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
+        result = 31 * result + (getSurname() != null ? getSurname().hashCode() : 0);
+        return result;
+    }
 }
